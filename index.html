@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>若者ケアラー</title>
+  </head>
+<body>
+    <div class="secondHead">
+      <img id="hongou" src="http://xs311218.xsrv.jp/sample/wp-content/uploads/2024/05/本郷猛.jpg">
+      <div class="vertical">君は一人で戦わなくていい。
+
+        <div class="fade-in1">君には多くの仲間がいる。</div>
+        <div class="fade-in2">君と同じように家族のために戦い続ける仲間が。</div>
+      </div>
+    </div>
+
+    <div class="imglayout">
+      <div id="leftText">
+       <p class="boxTitle">気が付いたときは若者ケアラーだった</p>
+      　私が中学にあがる前に母は病気で亡くなった。代わりにご飯を作るなど祖母は親代わりを務めてくれて、私は普通に中学高校と卒業し大学にも通えた。社会人になってひとり暮らしを始めても、週末に実家に帰省することが多かった。
+      　大事な仕事を任されるようになった３０歳を過ぎた頃、歳を重ねた祖母は徐々に体調を崩していく。実家に帰省した私は洗濯や買い物に連れていき、祖父母からの頼みごとを引き受けるようになる。
+    　困っていたから助けただけ。それがケアラーの始まり。祖母が弱っていくに従って私への依存は高まり、用事があって帰らないと電話で督促される。気が付いたら抜け出せなくなっていた。</div>
+      <div id="rightImg">
+      <img src="http://xs311218.xsrv.jp/sample/wp-content/uploads/2024/05/落ち込むリーマンjpeg.jpeg">  
+      </div>
+    </div>
+
+    <div class="navyLayout">
+      <div class="leftNavySide">
+        <p class="navytitle">
+        終わりのない闘いに身を置いていたのは<br>
+        自分だけじゃなかった。</p>
+        <p class="navyText">
+        　元ヤングケアラーや若者ケアラーたちで構成されるオンラインコミュニティに参加した。そこでは自分と同じように、自分以上に家族のケアで奔走されるケアラーたちがいた。
+        　zoomでのオンライン交流会では感情を爆発させる参加者もいた。長野の医療関係の女性、結局気付いてやり始めた人は誰でもケアラーになってしまう。その苦しみが周りから理解されないと。
+        　東京で働く20代の女性が突然泣き出した。皆同じような苦労を抱えていたんだと。同じことを感じた。
+        　ケアをしていた母親に何度も裏切られ、もう絶交することにした埼玉の男性もいた。
+        　皆全国各地で限界を超えてケアと戦っていた。</p>
+      </div>
+      
+      <div class="rightSide">
+        <img src="http://xs311218.xsrv.jp/sample/wp-content/uploads/2024/05/若者たち.jpg"></div>
+    </div>
+
+    <div class="imglayout">
+      <div id="leftText">
+       <p class="boxTitle secondColor">ケアラーたちとの出会いで答えが見えた</p>
+       　オンラインで交流していたケアラーたちと、実際に顔を合わせる形での座談会にも参加した。ヤングケアラー支援に力を入れていた埼玉県での開催となり、愛知から参加した私は最も遠方からの参加者となった。
+       　グループに分かれてそれぞれのケア体験を語り合った。ケアとの両立が難しくて仕事を辞めた２０代前半のケアラーもいた。ケア家族が亡くなったことでケアが終わったと安堵していた。
+       　家族のために時間を使う分、同年代と同じ生き方ができなくなる。ケアの終わりは対象者が亡くなるか、限界を感じて距離を取ることしかない。皆その狭間で苦しんでいた。
+       　でも皆はもう十分過ぎるほど頑張っている。ケアから逃げるのではなく、卒業することを選んでいいという想いが芽生えた。
+      </div>
+
+      <div id="rightImg">
+        <img src="http://xs311218.xsrv.jp/sample/wp-content/uploads/2024/06/座談会.jpg">  
+      </div>
+    </div>
+
+</body>
+<style>
+    body{font-family: serif; 
+  overflow-x: hidden; /* 横スクロールを禁止 */
+ }
+.secondHead{
+  background-image: url(http://xs311218.xsrv.jp/sample/wp-content/uploads/2024/06/背景色.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100vh;
+  text-align: center;
+  position: relative;
+  margin-bottom: 100px;
+}
+#hongou{background-size: cover;
+  height: 95%;
+  margin-top: 10px;
+}
+.vertical {
+    writing-mode: vertical-rl;
+    font-size: 180%;
+    font-weight: bold;
+    white-space: pre-line;
+    color: white;
+    position: absolute;  
+    top:5%; left: 15%;
+    text-align: justify;
+    z-index: 1;
+    transition: opacity 1s ease-in-out;
+    text-shadow: 2px 2px 10px black, -2px 2px 10px #000066, 2px -2px 10px black, -2px -2px 10px black;;
+}
+.fade-in1{animation-name: fadeinText; opacity: 0;
+    animation-delay: 1s; animation-duration: 4s;
+    animation-fill-mode: forwards;
+}
+.fade-in2{animation-name: fadeinText; opacity: 0;
+    animation-delay: 3s; animation-duration: 4s;
+    animation-fill-mode: forwards;
+}
+@keyframes fadeinText {
+    0% {opacity: 0.1;}
+    60%{opacity: 0.6;}
+    100% {opacity: 1;}
+}
+
+.imglayout{display: flex; width: 90%;
+  justify-content: space-around;
+  margin: 0 auto; /* 中央に配置 */
+}
+#leftText{flex-basis: 50%; font-size: 3vh;
+white-space: pre-line;}
+#rightImg {flex-basis: 45%; margin-left: 50px;}
+#rightImg img{object-fit: cover; width: 100%;
+  box-shadow: 0 0 10px #333;
+}
+
+.boxTitle{font-size: 120%; padding: 0.4em;/*文字周りの余白*/ font-weight: bold;
+  margin-top: -35px;
+  margin-bottom: -15px;
+  border-left: solid 5px #000099;/*左線（実線 太さ 色）*/
+  background: #BAD3FF;
+}
+.navyLayout{display: flex; margin-top: 100px; margin-bottom: 100px;
+  width: 100vw;  height: 85vh;
+  font-family: Verdana;
+}
+.leftNavySide{flex-basis: 40%; color: white; 
+  font-size: 4vh;  padding: 50px;
+  background-image: url(http://xs311218.xsrv.jp/sample/wp-content/uploads/2024/06/背景画像.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+}
+.navytitle{font-weight: bold;}
+.navyText{font-size: 3vh; white-space: pre-line;
+margin-top: -40px;}
+
+.rightSide{flex-basis: 60%; }
+.rightSide img{object-fit: cover;
+  width: 100%; height: 100%;
+  object-position: right;}
+
+.secondColor{border-left: solid 5px #FF0461;/*左線（実線 太さ 色）*/
+  background: #FFD5EC;}
+
+@media only screen and (max-width: 600px){
+    .vertical {font-size: 80%;}
+    .imglayout {flex-direction: column;}
+    #rightImg {flex-basis: 50%; margin-left: 0;
+    margin-top: 50px;}
+    .navyLayout{flex-direction: column;
+    margin-bottom: 500px;}
+    .navyText{width: 80vw;}
+}
+
+</style>
