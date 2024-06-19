@@ -26,7 +26,7 @@
       </div>
     </div>
 
-    <div class="navyLayout">
+     <div class="navyLayout">
       <div class="leftNavySide">
         <p class="navytitle">
         終わりのない闘いに身を置いていたのは<br>
@@ -37,8 +37,8 @@
         　東京で働く20代の女性が突然泣き出した。皆同じような苦労を抱えていたんだと。同じことを感じた。
         　ケアをしていた母親に何度も裏切られ、もう絶交することにした埼玉の男性もいた。
         　皆全国各地で限界を超えてケアと戦っていた。</p>
+        <img id="leftNavyImg" src="http://xs311218.xsrv.jp/sample/wp-content/uploads/2024/06/背景画像.jpg">
       </div>
-      
       <div class="rightSide">
         <img src="http://xs311218.xsrv.jp/sample/wp-content/uploads/2024/05/若者たち.jpg"></div>
     </div>
@@ -120,21 +120,29 @@ white-space: pre-line;}
   border-left: solid 5px #000099;/*左線（実線 太さ 色）*/
   background: #BAD3FF;
 }
-.navyLayout{display: flex; margin-top: 100px; 
-  margin-bottom: 100px;
+.navyLayout{display: flex; margin-top: 100px; 　margin-bottom: 100px;
   width: 100vw;  height: 85vh;
-  font-family: Verdana;
+  font-family: Verdana;}
+.leftNavySide{flex-basis: 40%; position: relative; 
+  color: white; font-size: 4vh;  padding: 50px;
+  width: 100%; 
 }
-.leftNavySide{flex-basis: 40%; color: white; 
-  font-size: 4vh;  padding: 50px;
-  background-image: url(http://xs311218.xsrv.jp/sample/wp-content/uploads/2024/06/背景画像.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  width: 100%;
+#leftNavyImg{object-fit: cover; width: 100%; height: 100%;
+  position: absolute; top: 0; left: 0;
+  opacity: 0;}
+.down{animation: downImg 3s 1s forwards;}
+@keyframes downImg {
+  0% {transform: translateY(-500px);
+     opacity: 0.1;}
+  50% {opacity: 0.6;}
+  100% {transform: translateX(0);
+    opacity: 1;}
 }
-.navytitle{font-weight: bold; text-shadow: 3px 3px 5px #0000BB}
+.navytitle{font-weight: bold; text-shadow: 3px 3px 5px #0000BB;
+  position: relative; 
+  z-index: 1;}
 .navyText{font-size: 3vh; white-space: pre-line;
-margin-top: -40px;}
+  position: relative; z-index: 1; margin-top: -40px;}
 
 .rightSide{flex-basis: 60%; }
 .rightSide img{object-fit: cover;
